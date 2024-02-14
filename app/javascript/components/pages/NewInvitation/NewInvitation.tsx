@@ -84,11 +84,10 @@ export default function NewInvitation() {
               />
               <Error error={errors?.email} touched={touched?.email} />
               <Button
-                color="secondary"
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{ mt: 3, mb: 2, backgroundColor: "#00ABE4" }}
               >
                 Send Invite
               </Button>
