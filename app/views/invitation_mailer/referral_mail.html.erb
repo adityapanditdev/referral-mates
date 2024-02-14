@@ -1,0 +1,7 @@
+<div>
+  <p>Hello, <%= @invitation.email %></p>
+  <p>
+    <%= @referred_by.email %> sent you an invitation to join.
+    Please join with this <a href="http://localhost:3000/signup?invitation_token=<%= @referred_by.referral_token %>&email=<%= @invitation.email %>">Referral URL</a>.
+  </p>
+</div>
