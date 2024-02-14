@@ -19,6 +19,19 @@ Ensure you have the following installed on your system:
 - NodeJS (version > 18x)
 - Yarn
 
+### Database Configuration
+
+1. Configure your `database.yml` file according to your local MySQL database setup. You will need to provide your MySQL username and password.
+
+   ```yaml
+   default: &default
+     adapter: mysql2
+     encoding: utf8mb4
+     pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+     username: your_mysql_username
+     password: your_mysql_password
+     socket: /var/run/mysqld/mysqld.sock
+
 ### Setup
 
 1. Clone this repository and navigate into the directory:
